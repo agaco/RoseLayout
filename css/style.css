@@ -1,0 +1,274 @@
+.grid-container .row {
+  width: 100%;
+  margin-bottom: 0px;
+  min-height: 65px;
+  overflow: hidden;
+  position: relative;
+  padding: 3px 0;
+}
+
+.grid-container .row.nested-row {
+  padding-bottom: 5px;
+}
+
+.grid-container .row:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.grid-container [class*="col-"] {
+  box-sizing: border-box;
+  float: left;
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid black;
+}
+
+.grid-container .col-xs-12 {
+  width: 100%;
+}
+
+.grid-container .col-xs-11 {
+  width: 91.66666667%;
+}
+
+.grid-container .col-xs-10 {
+  width: 83.33333333%;
+}
+
+.grid-container .col-xs-9 {
+  width: 75%;
+}
+
+.grid-container .col-xs-8 {
+  width: 66.66666667%;
+}
+
+.grid-container .col-xs-7 {
+  width: 58.33333333%;
+}
+
+.grid-container .col-xs-6 {
+  width: 50%;
+}
+
+.grid-container .col-xs-5 {
+  width: 41.66666667%;
+}
+
+.grid-container .col-xs-4 {
+  width: 33.33333333%;
+}
+
+.grid-container .col-xs-3 {
+  width: 25%;
+}
+
+.grid-container .col-xs-2 {
+  width: 16.66666667%;
+}
+
+.grid-container .col-xs-1 {
+  width: 8.33333333%;
+}
+
+@media only screen and (min-width: 640px) {
+  .grid-container {
+    /* For tablets: */
+  }
+  .grid-container .col-m-1 {
+    width: 8.33%;
+  }
+  .grid-container .col-m-2 {
+    width: 16.66%;
+  }
+  .grid-container .col-m-3 {
+    width: 25%;
+  }
+  .grid-container .col-m-4 {
+    width: 33.33%;
+  }
+  .grid-container .col-m-5 {
+    width: 41.66%;
+  }
+  .grid-container .col-m-6 {
+    width: 50%;
+  }
+  .grid-container .col-m-7 {
+    width: 58.33%;
+  }
+  .grid-container .col-m-8 {
+    width: 66.66%;
+  }
+  .grid-container .col-m-9 {
+    width: 75%;
+  }
+  .grid-container .col-m-10 {
+    width: 83.33%;
+  }
+  .grid-container .col-m-11 {
+    width: 91.66%;
+  }
+  .grid-container .col-m-12 {
+    width: 100%;
+  }
+}
+
+@media screen and (orientation: landscape), screen and (min-width: 800px) {
+  .grid-container .col-l-1 {
+    width: 8.33333%;
+  }
+  .grid-container .col-l-2 {
+    width: 16.66667%;
+  }
+  .grid-container .col-l-3 {
+    width: 25%;
+  }
+  .grid-container .col-l-4 {
+    width: 33.33333%;
+  }
+  .grid-container .col-l-5 {
+    width: 41.66667%;
+  }
+  .grid-container .col-l-6 {
+    width: 50%;
+  }
+  .grid-container .col-l-7 {
+    width: 58.33333%;
+  }
+  .grid-container .col-l-8 {
+    width: 66.66667%;
+  }
+  .grid-container .col-l-9 {
+    width: 75%;
+  }
+  .grid-container .col-l-10 {
+    width: 83.33333%;
+  }
+  .grid-container .col-l-11 {
+    width: 91.66667%;
+  }
+  .grid-container .col-l-12 {
+    width: 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  color: #000;
+  background-color: #dcbcd4;
+  width: 100vw;
+  margin: 0px auto;
+  padding: 0;
+  font-size: 15px;
+  font-family: 'Redressed', cursive;
+  position: relative;
+}
+
+.container {
+  width: 1000px;
+  margin: 0px auto;
+  border: 1px solid green;
+  height: 100%;
+}
+
+header {
+  height: 135px;
+  background-color: #a287be;
+}
+
+header p {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 45px;
+  border: 1px solid yellow;
+  text-align: left;
+  font-family: 'Redressed', cursive;
+  margin: 0;
+}
+
+.header-left {
+  height: 100%;
+}
+
+.header-logo-right {
+  background-image: url("/images/rose_logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header-logo-right img {
+  height: 110px;
+  width: auto;
+  float: right;
+}
+
+.clock {
+  height: 37px;
+  background-color: #9e005d;
+}
+
+.main {
+  height: 510px;
+}
+
+.main .table-main {
+  padding: 0 2%;
+}
+
+.main .table-main th {
+  border-bottom: 1px solid #9e005d;
+}
+
+.main .table-main table {
+  width: 100%;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid #9e005d;
+}
+
+.main .table-main td, .main .table-main th {
+  text-align: left;
+}
+
+.font-italica {
+  font-family: 'Redressed', cursive;
+  font-size: 40px;
+  margin: 0;
+}
+
+.right-main {
+  padding: 0 10%;
+}
+
+.right-main article {
+  height: 330px;
+  text-align: left;
+  margin: 0 auto;
+  border: 1px solid #9e005d;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  font-size: 20px;
+  padding: 0 3%;
+}
+
+.right-main form {
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #a287be;
+  height: 87px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=maps/style.css.map */
