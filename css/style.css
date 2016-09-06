@@ -208,6 +208,8 @@ header p {
 .clock .js-clock {
   margin: 0;
   color: white;
+  float: right;
+  margin-right: 2em;
 }
 
 .main {

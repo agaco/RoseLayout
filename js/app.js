@@ -1,26 +1,27 @@
 $(document).ready(function(){
+//CLOCK	
+	function clock(){
+		var today = new Date(),
+			h = today.getHours(),
+			m = today.getMinutes(),
+			s = today.getSeconds();
+	$("span.js-clock").text(h + ":" + m + ":" + s);
+		 setTimeout(clock, 1000);
+	};
+	clock()
+   
+//TABLE
+	var $button = $("input[type='submit']");
+	console.log($button)
 	
-//$(window).on("load", function(event){
-//	console.log("test na star");
-	
-	//$("span.js-clock").text("trwaa");
-	
-		var today = new Date();
-		var h = today.getHours();
-		var m = today.getMinutes();
-		var s = today.getSeconds();
-	
-	setInterval(function() {
-		$("span.js-clock").text(h + ":" + m + ":" + s);
+	$button.on("click", function(event){
+		console.log("test")
+		$("#name").attr("id").val();
+		console.log($("#name").attr("id").val());
+		event.stopPropagation();
 		
-		h = today.getHours();
-		m = today.getMinutes();
-		s = today.getSeconds();
-	}, 1000);
-		
-//		
-//});
+	})
 	
-
-    
+	
+	
 });
