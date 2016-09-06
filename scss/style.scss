@@ -17,7 +17,6 @@ body, html {
 	padding: 0;
 	font-size: $default-font-size;
 	font-family: 'Redressed', cursive;
-	position: relative;
 	}
 .container {
     width: 1000px;
@@ -43,10 +42,10 @@ header {
 	height: 100%;
 }
 .header-logo-right {
-	background-image: url("/images/rose_logo.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+//	background-image: url("/images/rose_logo.png");
+//	background-repeat: no-repeat;
+//	background-position: center;
+//	background-size: cover;
 	img {
 		height: 110px;
 		width: auto;
@@ -54,8 +53,12 @@ header {
 	}
 }
 .clock {
-	height: 37px;
+	height: 30px;
 	background-color: $dark-pink-color;
+	.js-clock {
+		margin: 0;
+		color: white;
+	}
 }
 .main {
 	height: 510px;
@@ -71,7 +74,10 @@ header {
 			border-radius: 8px;
 			border: 1px solid $dark-pink-color;
 		}
-		td, th {text-align: left;}
+		td, th {
+			text-align: left;
+			height: 30px;
+		}
 	}
 }
 .font-italica {
@@ -79,10 +85,13 @@ header {
 	font-size: 40px;
 	margin: 0;
 }
+.main {
+	height: 550px;
+}
 .right-main {
 	padding: 0 10%;;
 	article {
-		height: 330px;
+		height: 300px;
 		text-align: left;
 		margin: 0 auto;
 		border: 1px solid $dark-pink-color;
@@ -94,12 +103,49 @@ header {
 	}
 	form {
 		margin: 0 auto;
+		width: 100%;
+		label {
+			font-size: 1.5em;
+		}
+		input[type="text"], input[type="email"] {
+			display: inline-block;
+			background-color: transparent;
+			border: 1px solid $dark-pink-color;
+			line-height: 2em;
+			-webkit-border-radius: 8px;
+			-moz-border-radius: 8px;
+			border-radius: 8px;
+			margin-bottom: 0.7em;
+			margin-left: 1em;
+			width: auto;
+			height: 45px;
+			color: #a099a1;
+			font-family: 'Redressed', cursive;
+			font-size: 1.5em;
+			text-indent: 0.5em;
+		}
+		input[type="text"]:before {
+			content: "lalala";
+		}
+		input[type="submit"] {
+			background-color: $dark-pink-color;
+			-webkit-border-radius: 8px;
+			-moz-border-radius: 8px;
+			border-radius: 8px;
+			box-decoration-break: none;
+			width: 170px;
+			height: 40px;
+			margin: auto 0;
+			color: white;
+			font-size: 1.4em;
+			font-family: 'Redressed', cursive;
+		}
 	}
 }
 footer {
 	background-color: $violet-color;
 	height: 87px;
 	position: absolute;
-	bottom: 0;
+	bottom: 0px;
 	left: 0;
 }

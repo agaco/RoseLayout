@@ -4,7 +4,7 @@ $grid-columns: 12;
 	.row {
 		width: 100%;
 		margin-bottom: 0px;
-		min-height: 65px;
+		min-height: 40px;
 		overflow: hidden;
 		position: relative;
         //border: 2px solid yellow;
@@ -61,7 +61,7 @@ $grid-columns: 12;
 @media screen and (orientation: landscape),
 	   screen and (min-width: 800px) {
 	
-		//ręczne robienie szerokosci kolumn
+		//desktop
 	.col-l-1 {width: 1 * (100% / $grid-columns);}
 	.col-l-2 {width: 2 * (100% / $grid-columns);}
 	.col-l-3 {width: 3 * (100% / $grid-columns);}

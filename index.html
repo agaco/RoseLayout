@@ -5,7 +5,10 @@
     <title>ROSE LAYOUT</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Redressed" rel="stylesheet">
+    
+    <!--
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script type="text/javascript" src="js/jquery-3.0.0.js"></script>
     <script type="text/javascript" src="js/app.js"></script> 
@@ -25,7 +28,7 @@
 		</header>
 <!-- CLOCK -->  
         <div class="row clock">
-			<p>ZEGAR</p>
+			<span class="js-clock"></span>
         </div>
 <!-- MAIN -->
       <div class="row">
@@ -57,19 +60,17 @@
                </article>
                <a href="#">Add User</a>
                <form>
-				   <label>
-				   Name 
+				   <label> Name 
 						<input type="text">	
-				   </label>  <br>             
-				   <label>
-				   Email 
-						<input type="email"s>	
+				   </label>  <br>            
+				   <label>Email 	
+				   <input type="email"s>	
 				   </label>
-				   <input type="submit" name="Submit">
+				   <input type="submit" name="Submit" value="Submit" id="form-button" class="form-button">
                </form>
                
                
-                
+            
             </div>
 
         </div>
