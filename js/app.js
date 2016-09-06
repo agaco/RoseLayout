@@ -33,5 +33,9 @@ $(document).ready(function(){
 		
 	});
 	
-	
+	$("a.add-user").on("click", function(event){
+		event.preventDefault();
+		$("form.to-fade").fadeToggle();
+	});
+
 });

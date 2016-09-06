@@ -43,43 +43,60 @@ header {
 	height: 100%;
 }
 .header-logo-right {
-//	background-image: url("/images/rose_logo.png");
-//	background-repeat: no-repeat;
-//	background-position: center;
-//	background-size: cover;
+	height: 135px;
 	img {
-		height: 120px;
+		height: 135px;
 		width: auto;
 		float: right;
+		margin: 0;
+		margin-right: 2em;
 	}
 }
 .clock {
 	height: 30px;
 	background-color: $dark-pink-color;
 	.js-clock {
-		margin: 0;
+		line-height: 30px;
 		color: white;
 		float: right;
 		margin-right: 2em;
+		font-family: 'Redressed', cursive;
+		font-size: 1.2em;
 	}
 }
 .main {
 	height: 510px;
 	.table-main {
 		padding: 0 2%;
-		th {
-			border-bottom: 1px solid $dark-pink-color;
-		}
 		table {
 			width: 100%;
 			-webkit-border-radius: 8px;
 			-moz-border-radius: 8px;
 			border-radius: 8px;
 			border: 1px solid $dark-pink-color;
+			
 		}
-		td, th {
+		tr:nth-child(even) {
+			background-color: #e3e3e3;
+	
+		}
+		td{
 			text-align: left;
 			height: 30px;
+			border-left: 1px solid $dark-pink-color;
+			vertical-align:middle;
+			border-collapse: collapse;
+		}
+		td:first-child {
+			text-align: center;border-left: none;
+		}
+		th {
+			height: 40px;
+			text-align: left;
+			vertical-align: middle;
+			border-bottom: 1px solid $dark-pink-color;
+			border-collapse: inherit;
+			font-size: 1.2em;
 		}
 	}
 }
@@ -115,6 +132,12 @@ header {
 		border-radius: 8px;
 		font-size: 20px;
 		padding: 0 3%;
+	}
+	a {
+		cursor: pointer;
+		font: .5em;
+		font-size: 1.4em;
+		
 	}
 	form {
 		margin: 0 auto;
@@ -163,4 +186,14 @@ footer {
 	position: absolute;
 	bottom: 0px;
 	left: 0;
+	div{
+		display: inline-block;
+		height: 100%;
+		line-height: 87px;
+		font-size: 1.3em;
+		float: right;
+		&:first-child {
+			float: left;
+		}
+	}
 }

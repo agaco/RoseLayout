@@ -22,7 +22,6 @@
   float: left;
   width: 100%;
   min-height: 40px;
-  border: 1px solid black;
 }
 
 .grid-container .col-xs-12 {
@@ -196,10 +195,16 @@ header p {
   height: 100%;
 }
 
+.header-logo-right {
+  height: 135px;
+}
+
 .header-logo-right img {
-  height: 120px;
+  height: 135px;
   width: auto;
   float: right;
+  margin: 0;
+  margin-right: 2em;
 }
 
 .clock {
@@ -208,10 +213,12 @@ header p {
 }
 
 .clock .js-clock {
-  margin: 0;
+  line-height: 30px;
   color: white;
   float: right;
   margin-right: 2em;
+  font-family: 'Redressed', cursive;
+  font-size: 1.2em;
 }
 
 .main {
@@ -222,10 +229,6 @@ header p {
   padding: 0 2%;
 }
 
-.main .table-main th {
-  border-bottom: 1px solid #9e005d;
-}
-
 .main .table-main table {
   width: 100%;
   -webkit-border-radius: 8px;
@@ -234,9 +237,30 @@ header p {
   border: 1px solid #9e005d;
 }
 
-.main .table-main td, .main .table-main th {
+.main .table-main tr:nth-child(even) {
+  background-color: #e3e3e3;
+}
+
+.main .table-main td {
   text-align: left;
   height: 30px;
+  border-left: 1px solid #9e005d;
+  vertical-align: middle;
+  border-collapse: collapse;
+}
+
+.main .table-main td:first-child {
+  text-align: center;
+  border-left: none;
+}
+
+.main .table-main th {
+  height: 40px;
+  text-align: left;
+  vertical-align: middle;
+  border-bottom: 1px solid #9e005d;
+  border-collapse: inherit;
+  font-size: 1.2em;
 }
 
 .font-italica {
@@ -276,6 +300,12 @@ header p {
   border-radius: 8px;
   font-size: 20px;
   padding: 0 3%;
+}
+
+.right-main a {
+  cursor: pointer;
+  font: .5em;
+  font-size: 1.4em;
 }
 
 .right-main form {
@@ -329,6 +359,18 @@ footer {
   position: absolute;
   bottom: 0px;
   left: 0;
+}
+
+footer div {
+  display: inline-block;
+  height: 100%;
+  line-height: 87px;
+  font-size: 1.3em;
+  float: right;
+}
+
+footer div:first-child {
+  float: left;
 }
 
 /*# sourceMappingURL=maps/style.css.map */
