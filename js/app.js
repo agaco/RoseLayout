@@ -11,17 +11,27 @@ $(document).ready(function(){
 	clock()
    
 //TABLE
-	var $button = $("input[type='submit']");
-	console.log($button)
+	var $button = $("input[type='submit']"),
+		counter = 0;
 	
 	$button.on("click", function(event){
-		console.log("test")
-		$("#name").attr("id").val();
-		console.log($("#name").attr("id").val());
-		event.stopPropagation();
+		event.preventDefault();
+		counter++;
 		
+		
+		var $name = $("input[type='text']").val();
+		var $mail = $("input[type='email']").val();
+		var $newData = $("<tr class='one-row'><td>" + counter + "</td><td>" + $name + "</td><td>" +  $mail +"</td><td><span class='del'>X</span></td></tr>");		
+		$("table.pink-table").append($newData);
 	})
+//DELETE
+	var $delButton = $(".del")
+
 	
+	$(".pink-table").on("click", ".del", function(event){
+		$(this).parents(".one-row").remove();
+		
+	});
 	
 	
 });
